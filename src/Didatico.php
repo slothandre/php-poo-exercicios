@@ -1,26 +1,28 @@
-<?php require_once "Tecnico.php";
+<?php
+    namespace Biblioteca;
+    require_once "Tecnico.php";
     class Didatico extends Tecnico {
         private string $disciplina;
         private array $nivel = ["básico", "médio", "superior"];
 
         public function getDisciplina(): string
         {
-                return $this->disciplina;
+            return $this->disciplina;
         }
         public function setDisciplina(string $disciplina): self
         {
-                $this->disciplina = $disciplina;
+            $this->disciplina = $disciplina;
 
-                return $this;
+            return $this;
         }
         public function getNivel(): string
         {
-                return implode(", ", $this->nivel);
+            return implode(", ", $this->nivel);
         }
         public function setNivel(array $nivel): self
         {
-                $this->nivel = $nivel;
+            $this->nivel = $nivel;
 
-                return $this;
+            return $this;
         }
     }
