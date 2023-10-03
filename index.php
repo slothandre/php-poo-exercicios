@@ -1,7 +1,8 @@
 <?php
-    require_once "./src/Tecnico.php";
-    require_once "./src/Programacao.php";
-    require_once "./src/Didatico.php";
+
+use Biblioteca\{Didatico, Programacao, Tecnico};
+
+    require_once "./vendor/autoload.php";
 
     $livro01 = new Tecnico;
     $livro01->setTitulo("Diario de um Banana");
