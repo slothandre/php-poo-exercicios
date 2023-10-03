@@ -1,15 +1,17 @@
-<?php require_once "Tecnico.php";
+<?php 
+    namespace Biblioteca;
+    require_once "Tecnico.php";
     class Programacao extends Tecnico {
         private string $area;
 
         public function getArea(): string
         {
-                return $this->area;
+            return $this->area;
         }
         public function setArea(string $area): self
         {
-                $this->area = $area;
+            $this->area = $area;
 
-                return $this;
+            return $this;
         }
     }
