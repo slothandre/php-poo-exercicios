@@ -1,6 +1,6 @@
 <?php
 
-use Biblioteca\{Didatico, Programacao, Tecnico};
+use Biblioteca\{Didatico, Programacao, Tecnico, Web};
 
     require_once "./vendor/autoload.php";
 
@@ -32,6 +32,8 @@ use Biblioteca\{Didatico, Programacao, Tecnico};
     $livro04->setFormato(["Físico"]);
     $livro04->setDisciplina("Química");
     $livro04->setNivel(["Médio"]);
+
+    $livro05 = new Web;
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -101,6 +103,7 @@ use Biblioteca\{Didatico, Programacao, Tecnico};
                 </tbody>
             </table>
         </section>
+        <pre><?=var_dump($livro05)?></pre>
     </main>
 </body>
 </html>
