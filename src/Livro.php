@@ -1,4 +1,5 @@
 <?php
+    namespace Biblioteca;
     abstract class Livro {
         private string $titulo;
         private string $autor;
@@ -7,32 +8,33 @@
         
         public function getTitulo(): string
         {
-                return $this->titulo;
+            return $this->titulo;
         }
         public function setTitulo(string $titulo): self
         {
-                $this->titulo = $titulo;
+            $this->titulo = $titulo;
 
-                return $this;
+            return $this;
         }
         public function getAutor(): string
         {
-                return $this->autor;
+            return $this->autor;
         }
         public function setAutor(string $autor): self
         {
-                $this->autor = $autor;
+            $this->autor = $autor;
 
-                return $this;
+            return $this;
         }
         public function getPaginas(): int
         {
-                return $this->paginas;
+            return $this->paginas;
         }
         public function setPaginas(int $paginas): self
         {
-                $this->paginas = $paginas;
+            $this->paginas = $paginas;
+                
 
-                return $this;
+            return $this;
         }
-    }
+    }   
