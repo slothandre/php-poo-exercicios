@@ -1,0 +1,9 @@
+{
+    "name" : "andre/php-poo-exercicios",
+    "description" : "Exercício 03 de POO com PHP",
+    "autoload" : {
+        "psr-4" : {
+            "Biblioteca\\" : "src/"
+        }
+    }
+}
